@@ -171,12 +171,12 @@ public class Robot extends IterativeRobot {
 		ElevSpark2.set(-m_stick.getRawAxis(5));
 		
 		if (button3.get()) {
-			LeftArm.set(0.5);
-			RightArm.set(0.5);
-		}
-		else if (button4.get()) {
 			LeftArm.set(-0.5);
 			RightArm.set(-0.5);
+		}
+		else if (button4.get()) {
+			LeftArm.set(0.5);
+			RightArm.set(0.5);
 		}
 		else {
 			LeftArm.set(0.0);
